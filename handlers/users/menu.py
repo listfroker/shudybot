@@ -1,12 +1,10 @@
 from aiogram import types
 from aiogram.dispatcher import FSMContext
 from aiogram.types import CallbackQuery, ReplyKeyboardRemove
-from aiogram.utils.callback_data import CallbackData
 
 from data.config import admins
 from handlers.admins.menu import admin_main_menu
 from keyboards.default.main_menu import kb_main_menu, back
-from keyboards.inline.callback_datas import util_callback
 from keyboards.inline.change_menu import choice, choice1
 from loader import dp, db, bot
 from states.menu import Menu
